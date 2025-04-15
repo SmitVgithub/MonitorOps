@@ -1,0 +1,42 @@
+alerting:
+  slack:
+    webhook-url: "https://hooks.slack.com/services/..................."
+    title: "{{ .Endpoint.Name }} is down"
+    description: "Failed condition: {{ .Alert.Condition }} at {{ .Timestamp }}"
+    default-alert:
+      failure-threshold: 3
+      send-on-resolved: true
+      send-on-recovery: true
+
+security:
+  basic:
+    username: "gatus"
+    password-bcrypt-base64: "JDJ5JDA5JDdDb1k5UC5LMGRBdGszTTA0SHE1ZGVRdkFnTzgxTUNkemVQbXI1SjQ3eTVrNVc1Mi80ZS5L"
+
+storage:
+  type: sqlite
+  path: /data/data.db
+
+
+endpoints:
+  - name: Panel Failed
+    group: XYZ
+    url: "https://domain_name"
+    interval: 30s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 1000"
+    alerts:
+      - type: slack
+        description: "domain_name is failed."
+
+  - name: Panel Failed
+    group: XYZ
+    url: "https://domain_name"
+    interval: 30s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 1000"
+    alerts:
+      - type: slack
+        description: "domain_name is failed."

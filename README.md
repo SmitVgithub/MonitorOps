@@ -17,11 +17,11 @@ PulseWatch/
 ```
 
 ## 🚦 Stack Overview
-> Component | Description
-> Gatus | Automated health checks and SLA-style monitoring
-> Grafana | Dashboards and metrics visualization
-> Uptime Kuma | Self-hosted status page and uptime tracker
-> Alertmanager | Alert routing and Slack notification integration
+* Component | Description
+* Gatus | Automated health checks and SLA-style monitoring
+* Grafana | Dashboards and metrics visualization
+* Uptime Kuma | Self-hosted status page and uptime tracker
+* Alertmanager | Alert routing and Slack notification integration
 
 ## 🧰 Prerequisites
 * Docker

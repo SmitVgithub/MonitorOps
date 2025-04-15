@@ -19,7 +19,7 @@ PulseWatch/
 ## 🚦 Stack Overview
 * Component | Description
 * Gatus | Automated health checks and SLA-style monitoring
-  [Workflow](gatus/gatus (1).gif)
+![Workflow](gatus/gatus (1).gif)
 * Grafana | Dashboards and metrics visualization
 * Uptime Kuma | Self-hosted status page and uptime tracker
 * Alertmanager | Alert routing and Slack notification integration
